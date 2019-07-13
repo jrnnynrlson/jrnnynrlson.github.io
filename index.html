@@ -1,0 +1,2049 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Rubik:300&display=swap" rel="stylesheet">
+  <title>jenny nelson's website</title>
+  <link rel="icon" type="image/x-icon" href="horse.png">
+  <style>
+  #videos, #writing, #art {
+    width: 100%;
+    min-width: 100px;
+    padding: 0px 0;
+    text-align: left;
+    padding-top: 0px;
+    line-height: 1.5;
+    padding-right: 15px;
+  }
+
+  #videos_title, #writing_title, #art_title {
+    padding-top: 0px;
+  }
+
+  table {
+    max-width:100%;
+  }
+
+  #video_category, #writing_category, #art_category{
+/*    min-width:300px;
+*/  }
+
+  #contentcolumn {
+    vertical-align:middle;
+    padding-left:40px;
+    max-width:50%;
+  }
+
+  #info_row {
+    min-height:600px;
+  }
+  body {
+    font-family: 'Open Sans', sans-serif;
+    width:100%;
+    text-transform: lowercase;
+	}
+  h1{
+    font-family: 'Rubik', sans-serif;
+  }
+  h1,h2,h3{
+    padding-left:20px;
+    padding-top:0px;
+  }
+
+  h2{
+    padding:0px;
+  }
+  h2:hover,a:hover,#myname:hover,#videos_title:hover,#writing_title:hover,#art_title:hover{
+  	color:#F08080;
+    cursor:pointer
+  } 
+  #headshot:hover,#headshot_v2:hover {
+    cursor:pointer;
+  }
+
+  .explanation {
+    font-size: 11px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    color:#696969;
+
+  }
+
+  a {
+    padding:0px;
+    text-decoration:none;
+    color:#8B0000;
+  }
+
+  figcaption{
+    font-size:10px;
+    text-align:center;
+  }
+
+  th, td, tr {
+    vertical-align:top;
+    padding:0px;
+    padding-left:20px;
+  }
+
+  div {
+    vertical-align:top;
+    padding:0px;
+    overflow-x:auto;
+  }
+
+  ul {
+    list-style:none;
+  }
+
+  img {
+    max-width:300px;
+  }
+
+  img.ponchoimages {
+    max-width:500px;
+  }
+
+  img.jcwimages {
+    max-width:400px;
+  }
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  top: 50%;
+  font-size:12px;
+  margin-top: -22px;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* Caption text */
+.text {
+  font-size: 10px;
+  text-align: center;
+
+}
+
+.mySlides {
+  display:none;
+}
+.active-slide {
+  display:block;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;  
+  position: absolute;
+  top: 5;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* end slideshow styling */
+</style>
+</head>
+
+<body>
+<div id="myname" onclick="expandCategories()"><h1>jenny nelson</h1></div> 
+<!-- <h3 id="info" style="display:none"> 
+  comedian, writer, <a id="othertext" onclick="replaceOtherText()">other</a> <a href="jennys-resume.pdf" target="_blank">(resum&eacute;)</a>
+</h3> -->
+
+<table>
+<tr colspan="3" id="info_row">
+    <h3 id="info" style="display:none"> 
+    comedian, writer, <a id="othertext" onclick="replaceOtherText()">other</a> <a href="jennys-resume.pdf" target="_blank">(resum&eacute;)</a>
+    </h3>
+</tr>  
+<tr id = "videos_row">
+	<td id="videos_title" onclick="expandVideos()">
+		<h2>videos</h2>
+	</td>
+	<td id = "videos_category">
+		<div id="videos" style="display:none">
+        <p>
+        <div class="explanation"><em>(writing, performing, editing)</em></div>  
+        <a onclick="doubleFeature()">&#x25B8; llb double feature</a> (dir by <a href="https://graciepizzo.com" target="_blank">gracie pizzo</a>)
+        <br />
+        <a onclick="sandVid()">&#x25B8; i'm_with_the_sand_06</a> (collab w <a href="https://patrickhosmer.com/" target="_blank">patrick hosmer</a>)
+        <br />
+        <a onclick="tourVid()">&#x25B8; bushwick, nyc</a> (collab w <a href="https://twitter.com/oneweirdoldtip" target="_blank">kaeleigh forsyth</a>)
+        <br />        
+        <a onclick="actingOne()">&#x25B8; acting reel 2015</a> (collab w <a href="https://twitter.com/oneweirdoldtip" target="_blank">kaeleigh forsyth</a>)
+        <br />
+        <!--
+        <a onclick="actingTwo()">acting reel 2017 (collab w kaeleigh forsyth)</a>
+        <br />
+        -->
+        <a onclick="winkReel()">&#x25B8; wink reel</a> (edited by <a href="https://www.carinajollie.com/" target="_blank">carina jollie</a>)
+        <br />
+        <a onclick="breathingTechniques()">&#x25B8; breathing techniques</a> (funny or die&trade; exclusive&trade;)
+        <br />
+        <a onclick="backtoSchool()">&#x25B8; how to pack your backpack</a> (funny or die&trade; exclusive&trade;)
+        <br />
+        <a href="https://www.instagram.com/who.unfollowed.me/channel/" target="_blank">&#x25B8; igtv webseries summer 2018 &#x2197;</a>
+        </p>
+      </div>  
+	</td>
+	<td rowspan="3" id="contentcolumn" style="vertical-align:middle">
+    <div id="allcontent" style="margin:auto">
+    <figure id="headshot" class="headshot" onclick="expandCategories()">
+      <img src="jennytree.jpg">
+      <figcaption>photo by <a href="https://www.laurahetzel.com/" target="_blank">laura hetzel</a></figcaption>  
+    </figure>  
+    <figure id="headshot_v2" class="headshot_v2" onclick="expandCategories()" style="display:none">
+      <img src="jennyinside.jpg">
+      <figcaption>photo by <a href="https://www.laurahetzel.com/" target="_blank">laura hetzel</a></figcaption>  
+    </figure>  
+    <!-- VIDEO-->
+		<div id="doublefeature" style="display:none">
+      <iframe src="https://player.vimeo.com/video/290037268" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <p>lowly loverboi is my band with <a href="http://www.ticadouglasmusic.com/" target="_blank">tica douglas</a> and <a href="https://www.graciepizzo.com/" target="_blank">gracie pizzo</a>. <br />here are links to our <a href="http://lowlyloverboi.bandcamp.com" target="_blank">bandcamp</a> and <a href="https://soundcloud.com/user-100162072" target="_blank">soundcloud</a></p>      
+    </div>
+    <div id="sandvid" style="display:none">
+      <iframe src="https://www.instagram.com/p/BpUfV-fFE1z/embed" width="400" height="470" frameborder="0" scrolling="no" allowtransparency="true"></iframe>   
+    </div>
+    <div id="tourvideo" style="display:none">
+      <iframe src="https://www.instagram.com/p/BV1DKYADWoS/embed" width="400" height="420" frameborder="0" scrolling="no" allowtransparency="true"></iframe>   
+    </div>         
+    <div id="actingone" style="display:none">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/U7ZpHe6NerE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div id="actingtwo" style="display:none">
+      <p>
+      <blockquote class="twitter-tweet"><p lang="en" dir="ltr">my acting reel for 2017, shot directed edited by <a href="https://twitter.com/oneweirdoldtip?ref_src=twsrc%5Etfw">@oneweirdoldtip</a> <a href="https://t.co/07j4OhA96o">pic.twitter.com/07j4OhA96o</a></p>&mdash; jenny nelson (@jrnnynrlson) <a href="https://twitter.com/jrnnynrlson/status/854532648454291457?ref_src=twsrc%5Etfw">April 19, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </p>
+    </div>
+    <div id="winkreel" style="display:none">
+      <iframe src="https://www.instagram.com/p/BIsRBo5Burl/embed" width="400" height="290" frameborder="0" scrolling="no" allowtransparency="true"></iframe>    
+    </div>
+    <div id="breathing" style="display:none">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/zlH4A4iB8l0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div id="backtoschool" style="display:none">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/gd_LO8tS_o0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <!-- WRITING-->
+    <div id="primer" style="display:none">
+    <div class="slideshow-container">
+<!--       <a class="prev">&#8592; prev</a> &nbsp; | &nbsp;
+ -->      <a class="next">next &#8594;</a>
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 9</div>
+        <img src="primer1.png">
+        <div class="text">from "Machine Learning Basics: What It Is and How It Can Work for You"</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 9</div>
+        <img src="primer2.png">
+        <div class="text">from "Machine Learning Basics: What It Is and How It Can Work for You"</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 9</div>
+        <img src="primer3.png">
+        <div class="text">from "Machine Learning Basics: What It Is and How It Can Work for You"</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 9</div>
+        <img src="primer4.png">
+        <div class="text">from "Working Remotely and Productively at the Same Time"</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 9</div>
+        <img src="primer5.png">
+        <div class="text">from "Connect with Your Customers through Mobile Messaging"</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 9</div>
+        <img src="primer6.png">
+        <div class="text">from "Connect with Your Customers through Mobile Messaging"</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 9</div>
+        <img src="primer7.png">
+        <div class="text">minicourse screen</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 9</div>
+        <img src="primer8.png">
+        <div class="text">minicourse screen</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">9 / 9</div>
+        <img src="primer9.png">
+        <div class="text">from "Measure Your Business' Success by Tracking Its Profit And Loss"</div>
+      </div>    
+      <div style="display:none">
+        <span class="dot"></span>
+        <span class="dot" ></span>
+        <span class="dot" ></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+    <br>
+  </div>
+    <div id="poncho" style="display:none">
+      <div class="slideshow-container">
+<!--    <a class="prev">&#8592; prev</a> &nbsp; | &nbsp;
+ -->    <a class="next">next &#8594;</a>
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 8</div>
+          <img src="ponch1.png" class="ponchoimages">
+          <div class="text">aquarius horoscope</div>
+        </div>
+       <!--  <div class="mySlides fade">
+          <div class="numbertext">2 / 12</div>
+          <img src="poncho2.png" class="ponchoimages">
+          <div class="text">pisces</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 12</div>
+          <img src="poncho3.png" class="ponchoimages">
+          <div class="text">aries</div>
+        </div> -->
+      <!-- <div class="mySlides fade">
+        <div class="numbertext">4 / 12</div>
+        <img src="poncho4.png" class="ponchoimages">
+        <div class="text">taurus</div>
+      </div> -->
+      <!-- <div class="mySlides fade">
+        <div class="numbertext">5 / 12</div>
+        <img src="poncho5.png" class="ponchoimages">
+        <div class="text">gemini</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 12</div>
+        <img src="poncho6.png" class="ponchoimages">
+        <div class="text">cancer</div>
+      </div> -->
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 8</div>
+        <img src="ponch7.png" class="ponchoimages">
+        <div class="text">leo horoscope</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 8</div>
+        <img src="ponch8.png" class="ponchoimages">
+        <div class="text">virgo horoscope</div>
+      </div>
+     <!--  <div class="mySlides fade">
+        <div class="numbertext">9 / 12</div>
+        <img src="poncho9.png" class="ponchoimages">
+        <div class="text">libra</div>
+      </div>   -->
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 8</div>
+        <img src="ponch10.png" class="ponchoimages">
+        <div class="text">scorpio horoscope</div>
+      </div>  
+    <!--   <div class="mySlides fade">
+        <div class="numbertext">11 / 12</div>
+        <img src="poncho11.png" class="ponchoimages">
+        <div class="text">sagittarius</div>
+      </div>  
+      <div class="mySlides fade">
+        <div class="numbertext">12 / 12</div>
+        <img src="poncho12.png" class="ponchoimages">
+        <div class="text">capricorn</div>
+      </div>   -->
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 8</div>
+        <img src="ponch13.png" class="ponchoimages">
+        <div class="text">weather forecasts</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 8</div>
+        <img src="ponch14.png" class="ponchoimages">
+        <div class="text">valentine's day interaction with poncho</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 8</div>
+        <img src="ponch15.png" class="ponchoimages">
+        <div class="text">movie talk with poncho</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 8</div>
+        <img src="ponch16.png" class="ponchoimages">
+        <div class="text">wachabot for partnership w/ andy cohen's 'watch what happens live'</div>
+      </div>
+        
+      <div style="display:none">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>  
+      </div>
+    </div>
+    <div id="fader" style="display:none">
+      <p>
+        <ul>
+          <li><a href="https://www.thefader.com/2018/11/28/catherine-cohen-the-twist-shes-gorgeous-interview" target="_blank">Catherine Cohen profile &#x2197;</a></li>
+        </ul>  
+      </p>
+    </div> 
+    <div id="newestyork" style="display:none">
+      <p>
+        <ul>
+          <li><a href="http://www.newestyork.co/featured/2018/2/8/deleted-but-not-forgotten" target="_blank">Deleted But Not Forgotten &#x2197;</a></li>
+          <br >
+          <li><a href="http://www.newestyork.co/featured/2018/2/15/blank-space" target="_blank">Blank Space &#x2197;</a></li>
+          <br >
+          <li><a href="http://www.newestyork.co/featured/2018/2/22/major-sea" target="_blank">Major Sea &#x2197;</a></li>
+        </ul>
+      </p>
+    </div> 
+    <div id="hairpin" style="display:none">
+      <p>
+        <ul>
+          <li><a href="https://www.thehairpin.com/2017/05/i-wish-i-could-ride-a-bike-as-effortlessly-as-people-do-in-music-videos/" target="_blank">I Wish I Could Ride A Bike As Effortlessly As People Do In Music Videos &#x2197;</a></li>
+          <br>
+          <li><a href="https://www.thehairpin.com/2017/04/jean-clothes-ranked/" target="_blank">Jean Clothes, Ranked &#x2197;</a></li>
+          <br>
+          <li><a href="https://thehairpin.com/vanderpump-rules-season-5-fanfic-prompts-37f7510e58ba" target="_blank">'Vanderpump Rules' Season 5 Fanfic Prompts &#x2197;</a></li>
+        </ul>
+      </p>
+    </div> 
+    <div id="awl" style="display:none">
+      <p>
+        <a href="https://theawl.com/eight-memes-a-week-aaba53842899" target="_blank">Eight Memes A Week &#x2197;</a>
+      </p>
+    </div> 
+    <div id="oliveandlark" style="display:none">
+      <p>
+        <ul>
+          <li><a href="https://www.oliveandlark.com/blog/2019/1/15/a-memory-of-a-place" target="_blank">A Memory of a Place &#x2197;</a></li>
+          <br>
+          <li><a href="https://www.oliveandlark.com/blog/2019/1/6/my-sons-favorite-candles" target="_blank">My Sons' Favorite Candles &#x2197;</a></li>
+          <br>
+          <li><a href="https://www.oliveandlark.com/blog/2019/1/6/so-i-went-to-a-wedding-this-weekend" target="_blank">So I Went to a  Wedding This Weekend... &#x2197;</a></li>
+        </ul>
+      </p>
+    </div>
+    <div id="fod" style="display:none">
+      <p>
+        <ul>
+          <li><a href="http://www.funnyordie.com/articles/34f566215f/this-month-s-horoscope-for-plants" target="_blank">This Month's Horoscopes For Plants &#x2197;</a></li>
+          <br />
+          <li><a href="http://www.funnyordie.com/articles/754e9ff309/plants-you-ll-love-this-summer" target="_blank">Gossip For Plants This Summer &#x2197;</a></li>
+          <br />
+          <li><a href="http://www.funnyordie.com/articles/f1ccd95344/an-open-letter-to-drake-from-a-kid-who-admires-bullies" target="_blank">An Open Letter to Drake from a Kid Who Admires Bullies &#x2197;</a></li>
+        </ul>  
+      </p>
+    </div>   
+    <div id="splitsider" style="display:none">
+      <p>
+        <ul>
+          <li><a href="http://www.vulture.com/2017/03/shaliek-jenkins-hateshaliek-on-editing-videos-and-going-to-the-internet.html" target="_blank">Follow Friday feature (2015-2017) &#x2197;</a></li>
+          <br />
+          <li><a href="https://www.vulture.com/2014/04/talking-to-jessica-st-clair-and-lennon-parham-about-playing-house-ucb-and-female-friendships.html" target="_blank">Jessica St. Clair &amp; Lennon Parham interview &#x2197;</a></li>
+          <br />
+          <li><a href="https://www.vulture.com/2014/07/maria-bamford-on-how-she-develops-her-act.html" target="_blank">Maria Bamford interview &#x2197;</a></li>
+        </ul>  
+      </p>
+    </div>  
+    <div id="videogum" style="display:none">
+      <p>
+        <ul>
+          <li><a href="http://www.stereogum.com/1743353/an-interview-with-the-birthday-boys-mike-hanford-dave-ferguson-and-chris-vanartsdalen/vg-loc/videogum/" target="_blank">Birthday Boys interview &#x2197;</a></li>
+          <br />
+          <li><a href="http://www.stereogum.com/1742871/what-is-your-favorite-halloween-movie-party/vg-loc/videogum/" target="_blank">What Is Your Favorite Halloween Movie Party? &#x2197;</a></li>
+        </ul>  
+      </p>
+    </div> 
+    <div id="jcw" style="display:none">
+      <div class="slideshow-container">
+<!--       <a class="prev">&#8592; prev</a> &nbsp; | &nbsp;
+ -->  <a class="next">next &#8594;</a>
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 7</div>
+        <img src= "jcw1.jpg" class="jcwimages">
+        <div class="text">maura</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 7</div>
+        <img src= "jcw2.jpg" class="jcwimages">
+        <div class="text">patrick</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 7</div>
+        <img src= "jcw3.jpg" class="jcwimages">
+        <div class="text">allie</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 7</div>
+        <img src= "jcw4.jpg" class="jcwimages">
+        <div class="text">sophie</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 7</div>
+        <img src= "jcw5.jpg" class="jcwimages">
+        <div class="text">kaeleigh</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 7</div>
+        <img src= "jcw6.jpg" class="jcwimages">
+        <div class="text">g+t</div>
+      </div>
+      <!-- <div class="mySlides fade">
+        <div class="numbertext">7 / 8</div>
+        <img src= "jcw7.jpg" class="jcwimages">
+        <div class="text">me</div>
+      </div> -->
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 7</div>
+        <img src= "jcw8.jpg" class="jcwimages">
+        <div class="text">my inspo</div>
+      </div>
+      
+    <div style="display:none">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>  
+    </div>
+    </div>
+  </div>
+	</td>
+</tr>
+<tr id = "writing_row">
+	<td id="writing_title" onclick="expandWriting()">
+		<h2>writing</h2>
+	</td>
+	<td id="writing_category">
+		<div id="writing" style="display:none">
+			 <p>
+          <div class="explanation"><em>(product, humor, culture)</em></div>  
+		      <a onclick="primerShow()">&#x25B8; primer</a>
+		      <br />
+		      <a onclick="ponchoShow()">&#x25B8; poncho</a>
+		      <br />
+		      <a onclick="faderShow()">&#x25B8; fader</a>
+		      <br />
+		      <a onclick="newestyorkShow()">&#x25B8; newest york</a>
+		      <br />
+		      <a onclick="hairpinShow()">&#x25B8; the hairpin</a>
+		      <br />
+		      <a onclick="awlShow()">&#x25B8; the awl</a>
+		      <br />
+          <a onclick="oliveandlarkShow()">&#x25B8; olive & lark</a>
+          <br />
+		      <a onclick="fodShow()">&#x25B8; funny or die</a>
+		      <br />
+		      <a onclick="splitsiderShow()">&#x25B8; splitsider</a>
+		      <br />
+		      <a onclick="videogumShow()">&#x25B8; videogum</a>
+		      <br />
+		      </p>
+    	</div>
+    </td>    	
+</tr>	
+<tr id = "art_row">
+  <td id="art_title" onclick="expandArt()">
+    <h2>art</h2>
+  </td>
+  <td id = "art_category">
+    <div id="art" style="display:none">
+      <p>
+        <div class="explanation"><em>(performance, installation, ???)</em></div>  
+        <a href="https://github.com/jrnnynrlson/dating_app_features" target="blank">&#x25B8; dating app features, 2019 &#x2197;</a>
+        <br />
+        <a href="https://github.com/jrnnynrlson/cell_phone_wall" target="blank">&#x25B8; cell phone wall, 2018 &#x2197;</a>
+        <br />
+        <a onclick="jcwShow()">&#x25B8; james cage white sleepy soccer pig, 2016</a>
+      </p>
+    </div>
+  </td>    
+</tr>
+</table>
+
+<script>
+
+var other = document.getElementById("othertext")
+var clicks = 0;
+
+function replaceOtherText(){
+  clicks += 1;
+  if(clicks==1)
+    {other.innerHTML = "made this website";} 
+  else if(clicks==2)
+   {other.innerHTML = "can ride bike good";}
+  else if(clicks==3)
+   {other.innerHTML = "brown belt (retired)";}
+  else if(clicks==4) //for 6 clicks and above
+   {other.innerHTML = "brooklyn via chicago";}
+  else if(clicks >= 5) //for 6 clicks and above
+   {other.innerHTML = "<a href='https://twitter.com/jrnnynrlson' target='_blank'>@jrnnynrlson</a>";
+    clicks = 0}
+  else 
+   {other.innerHTML = "made this website";}
+}
+
+var a = document.getElementById("videos");
+var b = document.getElementById("writing");
+var c = document.getElementById("art");
+var headshot = document.getElementById("headshot");
+var headshot_v2 = document.getElementById("headshot_v2");
+
+function expandVideos() {
+  if (a.style.display === "none") {
+    a.style.display = "block";
+    b.style.display = "none";
+    c.style.display = "none";
+    aa.style.display = "none";
+    ab.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none"; 
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "inline";
+    headshot_v2.style.display = "none"                                                                
+  } else if (a.style.display ==="block" & b.style.display === "block" & c.style.display === "block") {
+    a.style.display = "block";
+    b.style.display = "none";
+    c.style.display = "none";
+    aa.style.display = "none";
+    ab.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none"; 
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "inline";                        
+    headshot_v2.style.display = "none"                                        
+}
+    else {
+    a.style.display = "none";
+    b.style.display = "none";
+    c.style.display = "none";
+    aa.style.display = "none";
+    ab.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none"; 
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none"; 
+    headshot.style.display = "inline";                        
+    headshot_v2.style.display = "none"                                        
+  }
+}  
+
+function expandWriting() {
+  if (b.style.display === "none") {
+    a.style.display = "none";
+    b.style.display = "block";
+    c.style.display = "none";
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none"; 
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "inline";
+    headshot_v2.style.display = "none"                                                          
+
+} else if (a.style.display ==="block" & b.style.display === "block" & c.style.display === "block") {
+    a.style.display = "none";
+    b.style.display = "block";
+    c.style.display = "none";
+    aa.style.display = "none";
+    ab.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none"; 
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "inline";
+    headshot_v2.style.display = "none"                                                          
+
+}     else {
+    a.style.display = "none";
+    b.style.display = "none";
+    c.style.display = "none";
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";
+    af.style.display = "none";
+    ag.style.display = "none"; 
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "inline";
+    headshot_v2.style.display = "none"                                                          
+
+  }
+}  
+
+function expandArt() {
+  if (c.style.display === "none") {
+    a.style.display = "none";
+    b.style.display = "none";
+    c.style.display = "block"
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";
+    af.style.display = "none"; 
+    ag.style.display = "none";  
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";    
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "inline";
+    headshot_v2.style.display = "none"                                                          
+
+  } else if (a.style.display ==="block" & b.style.display === "block" & c.style.display === "block") {
+    a.style.display = "none";
+    b.style.display = "none";
+    c.style.display = "block";
+    aa.style.display = "none";
+    ab.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none"; 
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "inline";
+    headshot_v2.style.display = "none"                                                          
+
+  } else {
+    a.style.display = "none";
+    b.style.display = "none";
+    c.style.display = "none";
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none"; 
+    af.style.display = "none"; 
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "inline";
+    headshot_v2.style.display = "none"                                                          
+
+  }
+}  
+
+var aa = document.getElementById("doublefeature");
+var ab = document.getElementById("sandvid");
+var tv = document.getElementById("tourvideo");
+var ac = document.getElementById("actingone");
+var ad = document.getElementById("actingtwo");
+var ae = document.getElementById("winkreel");
+var af = document.getElementById("breathing");
+var ag = document.getElementById("backtoschool");
+
+function doubleFeature() {
+  if (aa.style.display === "none") {
+    aa.style.display = "block";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                       
+
+  } else {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                       
+
+  }
+}
+
+function sandVid() {
+  if (ab.style.display === "none") {
+  	aa.style.display = "none";
+    ab.style.display = "block";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                       
+
+  } else {
+  	aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                       
+  }
+}
+
+function tourVid() {
+  if (tv.style.display === "none") {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "block";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                           
+
+  } else {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                           
+
+  }
+}
+
+function actingOne() {
+  if (ac.style.display === "none") {
+  	aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "block";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                           
+
+  } else {
+  	aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                           
+
+  }
+}
+
+function actingTwo() {
+  if (ad.style.display === "none") {
+  	aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "block";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                           
+
+  } else {
+  	aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                           
+
+  }
+}
+
+function winkReel() {
+  if (ae.style.display === "none") {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "block";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                           
+
+  } else {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                           
+
+  }
+}
+
+function breathingTechniques() {
+  if (af.style.display === "none") {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "block";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                           
+
+  } else {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                           
+
+  }
+}
+
+function backtoSchool() {
+  if (ag.style.display === "none") {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "block";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                           
+
+  } else {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                           
+
+  }
+}
+
+var ba = document.getElementById("primer");
+var bb = document.getElementById("poncho");
+var bc = document.getElementById("fader");
+var bd = document.getElementById("newestyork");
+var be = document.getElementById("hairpin");
+var bf = document.getElementById("awl");
+var ol = document.getElementById("oliveandlark");
+var bg = document.getElementById("fod");
+var bh = document.getElementById("splitsider");
+var bi = document.getElementById("videogum");
+
+function primerShow() {
+  if (ba.style.display === "none") {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "block";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                           
+
+  } else {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                           
+    
+  }
+}
+
+function ponchoShow() {
+  if (bb.style.display === "none") {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "block";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                                   
+  } else {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                                   
+  }
+}
+
+function faderShow() {
+  if (bc.style.display === "none") {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "block";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                                   
+  } else {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                                   
+  }
+}
+
+function newestyorkShow() {
+  if (bd.style.display === "none") {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "block";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                                   
+  } else {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                                   
+  }
+}
+
+function hairpinShow() {
+  if (be.style.display === "none") {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "block";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                                   
+  } else {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                               
+  }
+}
+
+function awlShow() {
+  if (bf.style.display === "none") {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "block";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                 
+  } else {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                 
+  }
+}
+
+function oliveandlarkShow() {
+  if (ol.style.display === "none") {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "block";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                         
+  } else {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                         
+  }
+}
+
+function fodShow() {
+  if (bg.style.display === "none") {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "block";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                         
+  } else {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                         
+  }
+}
+
+function splitsiderShow() {
+  if (bh.style.display === "none") {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "block";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                         
+  } else {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                         
+  }
+}
+
+function videogumShow() {
+  if (bi.style.display === "none") {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "block";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                     
+  } else {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                         
+  }
+}
+
+var ca = document.getElementById("jcw");
+
+function jcwShow() {
+  if (ca.style.display === "none") {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "block";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                     
+  } else {
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                     
+  }
+}
+
+var information = document.getElementById("info");
+
+function expandCategories() {
+  if (a.style.display === "none") {
+    info.style.display = "block";
+    a.style.display = "block";
+    b.style.display = "block";
+    c.style.display = "block";
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "block"                                        
+  }
+  else if (b.style.display === "none") {
+    info.style.display = "block";
+    a.style.display = "block";
+    b.style.display = "block";
+    c.style.display = "block";
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "block"
+  } 
+  else if (c.style.display === "none") {
+    info.style.display = "block";
+    a.style.display = "block";
+    b.style.display = "block";
+    c.style.display = "block";
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "block"                                        
+  }
+  else if(info.style.display === "none"){
+    info.style.display = "block";
+    a.style.display = "block";
+    b.style.display = "block";
+    c.style.display = "block";
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "block"
+  }
+  else {
+    info.style.display = "none";
+    a.style.display = "none";
+    b.style.display = "none"; 
+    c.style.display = "none";       
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "inline";
+    headshot_v2.style.display = "none"                                        
+  }
+}
+
+
+// slideshow script
+(function() {
+
+  init(); //on page load - show first slide, hidethe rest
+
+  function init() {
+
+    parents = document.getElementsByClassName('slideshow-container');
+
+    for (j = 0; j < parents.length; j++) {
+      var slides = parents[j].getElementsByClassName("mySlides");
+      var dots = parents[j].getElementsByClassName("dot");
+      slides[0].classList.add('active-slide');
+      dots[0].classList.add('active');
+    }
+  }
+
+  dots = document.getElementsByClassName('dot'); //dots functionality
+
+  for (i = 0; i < dots.length; i++) {
+
+    dots[i].onclick = function() {
+
+      slides = this.parentNode.parentNode.getElementsByClassName("mySlides");
+
+      for (j = 0; j < this.parentNode.children.length; j++) {
+        this.parentNode.children[j].classList.remove('active');
+        slides[j].classList.remove('active-slide');
+        if (this.parentNode.children[j] == this) {
+          index = j;
+        }
+      }
+      this.classList.add('active');
+      slides[index].classList.add('active-slide');
+
+    }
+  }
+//prev/next functionality
+  links = document.querySelectorAll('.slideshow-container a');
+
+  for (i = 0; i < links.length; i++) {
+    links[i].onclick = function() {
+      current = this.parentNode;
+
+      var slides = current.getElementsByClassName("mySlides");
+      var dots = current.getElementsByClassName("dot");
+      curr_slide = current.getElementsByClassName('active-slide')[0];
+      curr_dot = current.getElementsByClassName('active')[0];
+      curr_slide.classList.remove('active-slide');
+      curr_dot.classList.remove('active');
+      if (this.className == 'next') {
+
+        if (curr_slide.nextElementSibling.classList.contains('mySlides')) {
+          curr_slide.nextElementSibling.classList.add('active-slide');
+          curr_dot.nextElementSibling.classList.add('active');
+        } else {
+          slides[0].classList.add('active-slide');
+          dots[0].classList.add('active');
+        }
+
+      }
+
+
+    }
+
+  }
+})();
+</script>
+
+</body>
+</html>
