@@ -1,0 +1,177 @@
+#videos, #writing, #art {
+  width: 100%;
+  min-width: 100px;
+  padding: 0px 0;
+  text-align: left;
+  padding-top: 0px;
+  line-height: 1.5;
+  padding-right: 15px;
+}
+
+#videos_title, #writing_title, #art_title {
+  padding-top: 0px;
+}
+
+table {
+  max-width:100%;
+}
+
+#video_category, #writing_category, #art_category{
+/*    min-width:300px;
+*/  }
+
+#contentcolumn {
+  vertical-align:middle;
+  padding-left:40px;
+  max-width:50%;
+}
+
+#info_row {
+  min-height:600px;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  width:100%;
+  text-transform: lowercase;
+}
+h1{
+  font-family: 'Rubik', sans-serif;
+}
+h1,h2,h3{
+  padding-left:20px;
+  padding-top:0px;
+}
+
+h2{
+  padding:0px;
+}
+h2:hover,a:hover,#myname:hover,#videos_title:hover,#writing_title:hover,#art_title:hover{
+	color:#F08080;
+  cursor:pointer
+} 
+#headshot:hover,#headshot_v2:hover {
+  cursor:pointer;
+}
+
+.explanation {
+  font-size: 11px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  color:#696969;
+
+}
+
+a {
+  padding:0px;
+  text-decoration:none;
+  color:#8B0000;
+}
+
+figcaption{
+  font-size:10px;
+  text-align:center;
+}
+
+th, td, tr {
+  vertical-align:top;
+  padding:0px;
+  padding-left:20px;
+}
+
+div {
+  vertical-align:top;
+  padding:0px;
+  overflow-x:auto;
+}
+
+ul {
+  list-style:none;
+}
+
+img {
+  max-width:300px;
+}
+
+img.ponchoimages {
+  max-width:500px;
+}
+
+img.jcwimages {
+  max-width:400px;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  top: 50%;
+  font-size:12px;
+  margin-top: -22px;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* Caption text */
+.text {
+  font-size: 10px;
+  text-align: center;
+
+}
+
+.mySlides {
+  display:none;
+}
+.active-slide {
+  display:block;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;  
+  position: absolute;
+  top: 5;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* end slideshow styling */
