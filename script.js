@@ -9,7 +9,7 @@ function replaceOtherText(){
    {other.innerHTML = "can ride bike good";}
   else if(clicks==3)
    {other.innerHTML = "brown belt (retired)";}
-  else if(clicks==4) //for 6 clicks and above
+  else if(clicks==4) 
    {other.innerHTML = "brooklyn via chicago";}
   else if(clicks >= 5) //for 6 clicks and above
    {other.innerHTML = "<a href='https://twitter.com/jrnnynrlson' target='_blank'>@jrnnynrlson</a>";
@@ -1393,7 +1393,7 @@ function expandCategories() {
   }
 //prev/next functionality
   links = document.querySelectorAll('.slideshow-container a');
-
+/*
   for (i = 0; i < links.length; i++) {
     links[i].onclick = function() {
       current = this.parentNode;
@@ -1404,7 +1404,7 @@ function expandCategories() {
       curr_dot = current.getElementsByClassName('active')[0];
       curr_slide.classList.remove('active-slide');
       curr_dot.classList.remove('active');
-      if (this.className == 'next' || this.className == 'ponchoimages') {
+      if (this.className == 'next' || this.className == 'slideshowimages') {
 
         if (curr_slide.nextElementSibling.classList.contains('mySlides')) {
           curr_slide.nextElementSibling.classList.add('active-slide');
@@ -1416,9 +1416,9 @@ function expandCategories() {
       }
     }
   }
+*/
 
-
-  imgLinks = document.querySelectorAll('.ponchoimages');
+  imgLinks = document.querySelectorAll('.slideshowimages');
 
   for (i = 0; i < links.length; i++) {
     links[i].onclick = function() {
@@ -1430,7 +1430,7 @@ function expandCategories() {
       curr_dot = current.getElementsByClassName('active')[0];
       curr_slide.classList.remove('active-slide');
       curr_dot.classList.remove('active');
-      if (this.className == 'next' || this.className == 'ponchoimages') {
+      if (this.className == 'next' || this.className == 'slideshowimages') {
 
         if (curr_slide.nextElementSibling.classList.contains('mySlides')) {
           curr_slide.nextElementSibling.classList.add('active-slide');
