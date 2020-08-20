@@ -263,6 +263,7 @@ function expandArt() {
   }
 }  
 
+var st = document.getElementById("sharktank");
 var aa = document.getElementById("doublefeature");
 var ab = document.getElementById("sandvid");
 var tv = document.getElementById("tourvideo");
@@ -272,8 +273,61 @@ var ae = document.getElementById("winkreel");
 var af = document.getElementById("breathing");
 var ag = document.getElementById("backtoschool");
 
+function sharkTank() {
+  if (st.style.display === "none") {
+    st.style.display = "block";
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                       
+
+  } else {
+    st.style.display = "none";
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                                       
+
+  }
+}
+
 function doubleFeature() {
   if (aa.style.display === "none") {
+    st.style.display = "none";
     aa.style.display = "block";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -297,6 +351,7 @@ function doubleFeature() {
     headshot_v2.style.display = "none"                                                       
 
   } else {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -324,6 +379,7 @@ function doubleFeature() {
 
 function sandVid() {
   if (ab.style.display === "none") {
+    st.style.display = "none";
   	aa.style.display = "none";
     ab.style.display = "block";
     tv.style.display = "none";
@@ -347,6 +403,7 @@ function sandVid() {
     headshot_v2.style.display = "none"                                                       
 
   } else {
+    st.style.display = "none";
   	aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -373,6 +430,7 @@ function sandVid() {
 
 function tourVid() {
   if (tv.style.display === "none") {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "block";
@@ -396,6 +454,7 @@ function tourVid() {
     headshot_v2.style.display = "none"                                                           
 
   } else {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -423,6 +482,7 @@ function tourVid() {
 
 function actingOne() {
   if (ac.style.display === "none") {
+    st.style.display = "none";
   	aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -446,7 +506,7 @@ function actingOne() {
     headshot_v2.style.display = "none"                                                           
 
   } else {
-  	aa.style.display = "none";
+    st.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
     ac.style.display = "none";
@@ -473,6 +533,7 @@ function actingOne() {
 
 function actingTwo() {
   if (ad.style.display === "none") {
+    st.style.display = "none";
   	aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -496,6 +557,7 @@ function actingTwo() {
     headshot_v2.style.display = "none"                                                           
 
   } else {
+    st.style.display = "none";
   	aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -523,6 +585,7 @@ function actingTwo() {
 
 function winkReel() {
   if (ae.style.display === "none") {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -546,6 +609,7 @@ function winkReel() {
     headshot_v2.style.display = "none"                                                           
 
   } else {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -573,6 +637,7 @@ function winkReel() {
 
 function breathingTechniques() {
   if (af.style.display === "none") {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -596,6 +661,7 @@ function breathingTechniques() {
     headshot_v2.style.display = "none"                                                           
 
   } else {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -623,6 +689,7 @@ function breathingTechniques() {
 
 function backtoSchool() {
   if (ag.style.display === "none") {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -646,6 +713,7 @@ function backtoSchool() {
     headshot_v2.style.display = "none"                                                           
 
   } else {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -684,6 +752,7 @@ var bi = document.getElementById("videogum");
 
 function primerShow() {
   if (ba.style.display === "none") {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -707,6 +776,7 @@ function primerShow() {
     headshot_v2.style.display = "none"                                                           
 
   } else {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -734,6 +804,7 @@ function primerShow() {
 
 function ponchoShow() {
   if (bb.style.display === "none") {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -756,6 +827,7 @@ function ponchoShow() {
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                                   
   } else {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -782,7 +854,7 @@ function ponchoShow() {
 
 function faderShow() {
   if (bc.style.display === "none") {
-    aa.style.display = "none";
+    st.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
     ac.style.display = "none";
@@ -804,6 +876,7 @@ function faderShow() {
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                                   
   } else {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -830,6 +903,7 @@ function faderShow() {
 
 function newestyorkShow() {
   if (bd.style.display === "none") {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -852,6 +926,7 @@ function newestyorkShow() {
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                                   
   } else {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -878,6 +953,7 @@ function newestyorkShow() {
 
 function hairpinShow() {
   if (be.style.display === "none") {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -900,6 +976,7 @@ function hairpinShow() {
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                                   
   } else {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -926,6 +1003,7 @@ function hairpinShow() {
 
 function awlShow() {
   if (bf.style.display === "none") {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -948,6 +1026,7 @@ function awlShow() {
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                 
   } else {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -974,6 +1053,7 @@ function awlShow() {
 
 function oliveandlarkShow() {
   if (ol.style.display === "none") {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -996,6 +1076,7 @@ function oliveandlarkShow() {
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                         
   } else {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -1022,6 +1103,7 @@ function oliveandlarkShow() {
 
 function fodShow() {
   if (bg.style.display === "none") {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -1044,6 +1126,7 @@ function fodShow() {
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                         
   } else {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -1070,6 +1153,7 @@ function fodShow() {
 
 function splitsiderShow() {
   if (bh.style.display === "none") {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -1092,6 +1176,7 @@ function splitsiderShow() {
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                         
   } else {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -1118,6 +1203,7 @@ function splitsiderShow() {
 
 function videogumShow() {
   if (bi.style.display === "none") {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -1139,6 +1225,7 @@ function videogumShow() {
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                     
   } else {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -1167,6 +1254,7 @@ var ca = document.getElementById("jcw");
 
 function jcwShow() {
   if (ca.style.display === "none") {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -1189,6 +1277,7 @@ function jcwShow() {
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                     
   } else {
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -1221,6 +1310,7 @@ function expandCategories() {
     a.style.display = "block";
     b.style.display = "block";
     c.style.display = "block";
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -1248,6 +1338,7 @@ function expandCategories() {
     a.style.display = "block";
     b.style.display = "block";
     c.style.display = "block";
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -1275,6 +1366,7 @@ function expandCategories() {
     a.style.display = "block";
     b.style.display = "block";
     c.style.display = "block";
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -1302,6 +1394,7 @@ function expandCategories() {
     a.style.display = "block";
     b.style.display = "block";
     c.style.display = "block";
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
@@ -1329,6 +1422,7 @@ function expandCategories() {
     a.style.display = "none";
     b.style.display = "none"; 
     c.style.display = "none";       
+    st.style.display = "none";
     aa.style.display = "none";
     ab.style.display = "none";
     tv.style.display = "none";
