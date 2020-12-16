@@ -1,4 +1,3 @@
-@@ -1,1540 +0,0 @@
 var other = document.getElementById("othertext")
 var clicks = 0;
 
