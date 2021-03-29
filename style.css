@@ -32,7 +32,8 @@ table {
 body {
   font-family: 'Open Sans', sans-serif;
   width:100%;
-  text-transform: lowercase;
+  text-transform: lowercase;s
+
 }
 h1{
   font-family: 'Rubik', sans-serif;
@@ -47,10 +48,10 @@ h2{
 }
 h2:hover,a:hover,#myname:hover,#videos_title:hover,#writing_title:hover,#art_title:hover{
 	color:#F08080;
-  cursor:pointer
+  cursor:url(https://cur.cursors-4u.net/anime/ani-1/ani196.ani), url(https://cur.cursors-4u.net/anime/ani-1/ani196.png), auto !important
 } 
 #headshot:hover,#headshot_v2:hover {
-  cursor:pointer;
+  cursor:url(https://cur.cursors-4u.net/anime/ani-1/ani196.ani), url(https://cur.cursors-4u.net/anime/ani-1/ani196.png), auto !important;
 }
 
 .explanation {
@@ -61,10 +62,13 @@ h2:hover,a:hover,#myname:hover,#videos_title:hover,#writing_title:hover,#art_tit
 
 }
 
+* {cursor: url(https://cur.cursors-4u.net/anime/ani-1/ani196.ani), url(https://cur.cursors-4u.net/anime/ani-1/ani196.png), auto !important;} 
+
 a {
   padding:0px;
   text-decoration:none;
   color:#8B0000;
+
 }
 
 figcaption{
@@ -108,7 +112,7 @@ img.jcwimages {
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
+  cursor: url(https://cur.cursors-4u.net/anime/ani-1/ani196.ani), url(https://cur.cursors-4u.net/anime/ani-1/ani196.png), auto !important;
   top: 50%;
   font-size:12px;
   margin-top: -22px;
@@ -142,7 +146,7 @@ img.jcwimages {
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor:pointer;
+  cursor:url(https://cur.cursors-4u.net/anime/ani-1/ani196.ani), url(https://cur.cursors-4u.net/anime/ani-1/ani196.png), auto !important;
   height: 13px;
   width: 13px;
   margin: 0 2px;
