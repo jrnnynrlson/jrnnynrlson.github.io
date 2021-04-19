@@ -48,11 +48,11 @@ h2{
 }
 h2:hover,a:hover,#myname:hover,#videos_title:hover,#writing_title:hover,#art_title:hover{
 	color:#F08080;
-/*  cursor:url(https://cur.cursors-4u.net/anime/ani-1/ani196.ani), url(https://cur.cursors-4u.net/anime/ani-1/ani196.png), auto !important
-*/} 
+  cursor: pointer;
+} 
 #headshot:hover,#headshot_v2:hover {
-/*  cursor:url(https://cur.cursors-4u.net/anime/ani-1/ani196.ani), url(https://cur.cursors-4u.net/anime/ani-1/ani196.png), auto !important;
-*/}
+  cursor: pointer;
+}
 
 .explanation {
   font-size: 11px;
