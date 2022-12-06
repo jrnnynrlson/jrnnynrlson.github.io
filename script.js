@@ -1302,6 +1302,58 @@ function jcwShow() {
   }
 }
 
+var ca = document.getElementById("riso");
+
+function risoShow() {
+  if (ca.style.display === "none") {
+    st.style.display = "none";
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "block";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                     
+  } else {
+    st.style.display = "none";
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                     
+  }
+}
+
 var information = document.getElementById("info");
 
 function expandCategories() {
