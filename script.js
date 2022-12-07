@@ -47,6 +47,7 @@ function expandVideos() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "inline";
     headshot_v2.style.display = "none"                                                                
   } else if (a.style.display ==="block" & b.style.display === "block" & c.style.display === "block") {
@@ -71,6 +72,7 @@ function expandVideos() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "inline";                        
     headshot_v2.style.display = "none"                                        
 }
@@ -96,6 +98,7 @@ function expandVideos() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none"; 
+    ra.style.display = "none";
     headshot.style.display = "inline";                        
     headshot_v2.style.display = "none"                                        
   }
@@ -125,6 +128,7 @@ function expandWriting() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "inline";
     headshot_v2.style.display = "none"                                                          
 
@@ -150,6 +154,7 @@ function expandWriting() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "inline";
     headshot_v2.style.display = "none"                                                          
 
@@ -176,6 +181,7 @@ function expandWriting() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "inline";
     headshot_v2.style.display = "none"                                                          
 
@@ -206,6 +212,7 @@ function expandArt() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "inline";
     headshot_v2.style.display = "none"                                                          
 
@@ -231,6 +238,7 @@ function expandArt() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "inline";
     headshot_v2.style.display = "none"                                                          
 
@@ -257,6 +265,7 @@ function expandArt() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "inline";
     headshot_v2.style.display = "none"                                                          
 
@@ -295,6 +304,7 @@ function sharkTank() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                       
 
@@ -319,6 +329,7 @@ function sharkTank() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                       
 
@@ -347,6 +358,7 @@ function doubleFeature() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                       
 
@@ -371,6 +383,7 @@ function doubleFeature() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                       
 
@@ -399,6 +412,7 @@ function sandVid() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                       
 
@@ -423,6 +437,7 @@ function sandVid() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                       
   }
@@ -450,6 +465,7 @@ function tourVid() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                           
 
@@ -474,6 +490,7 @@ function tourVid() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                           
 
@@ -502,6 +519,7 @@ function actingOne() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                           
 
@@ -525,6 +543,7 @@ function actingOne() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                           
 
@@ -553,6 +572,7 @@ function actingTwo() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                           
 
@@ -577,6 +597,7 @@ function actingTwo() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                           
 
@@ -605,6 +626,7 @@ function winkReel() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                           
 
@@ -629,6 +651,7 @@ function winkReel() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                           
 
@@ -657,6 +680,7 @@ function breathingTechniques() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                           
 
@@ -681,6 +705,7 @@ function breathingTechniques() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                           
 
@@ -709,6 +734,7 @@ function backtoSchool() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                           
 
@@ -733,6 +759,7 @@ function backtoSchool() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                           
 
@@ -772,6 +799,7 @@ function primerShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                           
 
@@ -796,6 +824,7 @@ function primerShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                           
     
@@ -824,6 +853,7 @@ function ponchoShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                                   
   } else {
@@ -847,6 +877,7 @@ function ponchoShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                                   
   }
@@ -873,6 +904,7 @@ function faderShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                                   
   } else {
@@ -896,6 +928,7 @@ function faderShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                                   
   }
@@ -923,6 +956,7 @@ function newestyorkShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                                   
   } else {
@@ -946,6 +980,7 @@ function newestyorkShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                                   
   }
@@ -973,6 +1008,7 @@ function hairpinShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                                                   
   } else {
@@ -996,6 +1032,7 @@ function hairpinShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                               
   }
@@ -1023,6 +1060,7 @@ function awlShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                 
   } else {
@@ -1046,6 +1084,7 @@ function awlShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                 
   }
@@ -1073,6 +1112,7 @@ function oliveandlarkShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                         
   } else {
@@ -1096,6 +1136,7 @@ function oliveandlarkShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                         
   }
@@ -1123,6 +1164,7 @@ function fodShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                         
   } else {
@@ -1146,6 +1188,7 @@ function fodShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                         
   }
@@ -1173,6 +1216,7 @@ function splitsiderShow() {
     bh.style.display = "block";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                         
   } else {
@@ -1196,6 +1240,7 @@ function splitsiderShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                         
   }
@@ -1222,6 +1267,8 @@ function videogumShow() {
     bg.style.display = "none";
     bh.style.display = "none";
     bi.style.display = "block";
+    ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                     
   } else {
@@ -1245,6 +1292,7 @@ function videogumShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                         
   }
@@ -1274,6 +1322,7 @@ function jcwShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "block";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                     
   } else {
@@ -1297,62 +1346,65 @@ function jcwShow() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "none"                                     
   }
 }
 
-// var ca = document.getElementById("riso");
+var ra = document.getElementById("riso");
 
-// function risoShow() {
-//   if (ca.style.display === "none") {
-//     st.style.display = "none";
-//     aa.style.display = "none";
-//     ab.style.display = "none";
-//     tv.style.display = "none";
-//     ac.style.display = "none";
-//     ad.style.display = "none";
-//     ae.style.display = "none";  
-//     af.style.display = "none";
-//     ag.style.display = "none";
-//     ba.style.display = "none";
-//     bb.style.display = "none";
-//     bc.style.display = "none";
-//     bd.style.display = "none";
-//     be.style.display = "none";
-//     bf.style.display = "none";
-//     ol.style.display = "none";
-//     bg.style.display = "none";
-//     bh.style.display = "none";
-//     bi.style.display = "none";
-//     ca.style.display = "block";
-//     headshot.style.display = "none";
-//     headshot_v2.style.display = "none"                                     
-//   } else {
-//     st.style.display = "none";
-//     aa.style.display = "none";
-//     ab.style.display = "none";
-//     tv.style.display = "none";
-//     ac.style.display = "none";
-//     ad.style.display = "none";
-//     ae.style.display = "none";  
-//     af.style.display = "none";
-//     ag.style.display = "none";
-//     ba.style.display = "none";
-//     bb.style.display = "none";
-//     bc.style.display = "none";
-//     bd.style.display = "none";
-//     be.style.display = "none";
-//     bf.style.display = "none";
-//     ol.style.display = "none";
-//     bg.style.display = "none";
-//     bh.style.display = "none";
-//     bi.style.display = "none";
-//     ca.style.display = "none";
-//     headshot.style.display = "none";
-//     headshot_v2.style.display = "none"                                     
-//   }
-// }
+function risoShow() {
+  if (ra.style.display === "none") {
+    st.style.display = "none";
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    ra.style.display = "block";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                     
+  } else {
+    st.style.display = "none";
+    aa.style.display = "none";
+    ab.style.display = "none";
+    tv.style.display = "none";
+    ac.style.display = "none";
+    ad.style.display = "none";
+    ae.style.display = "none";  
+    af.style.display = "none";
+    ag.style.display = "none";
+    ba.style.display = "none";
+    bb.style.display = "none";
+    bc.style.display = "none";
+    bd.style.display = "none";
+    be.style.display = "none";
+    bf.style.display = "none";
+    ol.style.display = "none";
+    bg.style.display = "none";
+    bh.style.display = "none";
+    bi.style.display = "none";
+    ca.style.display = "none";
+    ra.style.display = "none";
+    headshot.style.display = "none";
+    headshot_v2.style.display = "none"                                     
+  }
+}
 
 var information = document.getElementById("info");
 
@@ -1382,6 +1434,7 @@ function expandCategories() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "block"                                        
   }
@@ -1410,6 +1463,7 @@ function expandCategories() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "block"
   } 
@@ -1438,6 +1492,7 @@ function expandCategories() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "block"                                        
   }
@@ -1466,6 +1521,7 @@ function expandCategories() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "none";
     headshot_v2.style.display = "block"
   }
@@ -1494,6 +1550,7 @@ function expandCategories() {
     bh.style.display = "none";
     bi.style.display = "none";
     ca.style.display = "none";
+    ra.style.display = "none";
     headshot.style.display = "inline";
     headshot_v2.style.display = "none"                                        
   }
